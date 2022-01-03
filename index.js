@@ -185,7 +185,7 @@ fibonacciGenerator(100);
 function weekDays(w) {
     let w = ["monday", "tuesday", "wednesday", "thursday", "friday"];
     let weekArray = w.length - 1;
-    for (var i = 0; i <= weekArray; i++) {
+    for (let i = 0; i <= weekArray; i++) {
         console.log(w[i])
     }
 }
