@@ -1,13 +1,13 @@
-var name = prompt("What is your name?");
+let name = prompt("What is your name?");
 
 // Isolate first letter
-var sliceFirstChar = name.slice(0, 1);
+let sliceFirstChar = name.slice(0, 1);
 // Change first letter to upper case
-var upperCaseLetter = sliceFirstChar.toUpperCase();
+let upperCaseLetter = sliceFirstChar.toUpperCase();
 // grabs the group of characters
-var groupOfChar = name.slice(1, name.length);
+let groupOfChar = name.slice(1, name.length);
 // isolate the group of characters to lowercase
-var lowerCase = groupOfChar.toLowerCase();
+let lowerCase = groupOfChar.toLowerCase();
 
 alert("Hello, " + upperCaseLetter + lowerCase);
 
@@ -49,19 +49,19 @@ bmi should equal 20 when it's rounded to the nearest whole number.
 */
 
 // BMI Calculator Intermediate
-function bmiCalculator(weight,height){
-    var bmi = Math.round(weight / Math.pow(height, 2));
+function bmiCalculator(weight, height) {
+    let bmi = Math.round(weight / Math.pow(height, 2));
 
     if (bmi < 18.5) {
-    return("Your BMI is " + bmi + ", so you are underweight."); 
+        return ("Your BMI is " + bmi + ", so you are underweight.");
     }
 
-    if (bmi > 18.5 && bmi < 24.9 ) {
-    return("Your BMI is " + bmi + ", so you have a normal weight."); 
+    if (bmi > 18.5 && bmi < 24.9) {
+        return ("Your BMI is " + bmi + ", so you have a normal weight.");
     }
 
     if (bmi > 24.9) {
-    return("Your BMI is " + bmi + ", so you are overweight.");
+        return ("Your BMI is " + bmi + ", so you are overweight.");
     }
 }
 
@@ -89,7 +89,7 @@ loveCalculator = Math.floor(loveCalculator) + 1;
 
 if (loveCalculator <= 100 && loveCalculator >= 75) {
     alert(alert(name1 + " and " + name2 + " have a love score of " + loveCalculator + "%" + "," + " they love each other very much!"))
-} else if (loveCalculator < 75 && loveCalculator >= 50 ) {
+} else if (loveCalculator < 75 && loveCalculator >= 50) {
     alert(name1 + " and " + name2 + " are compatible with a love score of " + loveCalculator + "%" + ".")
 } else if (loveCalculator < 50 && loveCalculator >= 25) {
     alert(name1 + " and " + name2 + " are not in love as much as we thought with a love score of " + loveCalculator + "%" + ".")
@@ -184,18 +184,18 @@ fibonacciGenerator(100);
 
 
 function weekDays(w) {
-    var w = ["monday","tuesday","wednesday","thursday","friday"];
+    var w = ["monday", "tuesday", "wednesday", "thursday", "friday"];
     let weekArray = w.length - 1;
     for (var i = 0; i <= weekArray; i++) {
-      console.log(w[i])
+        console.log(w[i])
     }
-  }
+}
 
-  var arr = ["monday","tuesday","wednesday","thursday","friday"],
-  len = arr.length - 1;
+var arr = ["monday", "tuesday", "wednesday", "thursday", "friday"],
+    len = arr.length - 1;
 
-for (var i = 0; i <= len; i++){
-  console.log( "The value of element # " + i + " is: " + arr[i] );
+for (var i = 0; i <= len; i++) {
+    console.log("The value of element # " + i + " is: " + arr[i]);
 }
 
 let sampleArray = ["Matthew", "Ty", "Madelyn", "Ewell"];
@@ -212,7 +212,7 @@ console.log(sampleArray)
 sampleArray.shift()
 // removes the first element of the array
 console.log(sampleArray)
-sampleArray.unshift("Matthew") 
+sampleArray.unshift("Matthew")
 // adds an element at the front of an array
 console.log(sampleArray)
 
