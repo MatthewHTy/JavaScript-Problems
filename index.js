@@ -249,3 +249,22 @@ console.log(palindrome('radar'));
 console.log(palindrome('redder'));
 
 console.log(palindrome('window'));
+
+// Removing duplicates from an array
+
+// brute froce
+let a = [1, 2, 5, 2, 1, 8];
+// [1, 2, 5, 8];
+let b = [];
+// new array to input non-duplicates
+let len = a.length;
+// making it faster
+for (let i = 0; i < len; i++) {
+    if (b.indexOf(a[i]) === - 1) {
+        // - 1 usually means it is not there 
+        // hence the push of the non-duplicate with the push method
+        b.push(a[i])
+    } 
+    // indexOf is a method that returns the first index at which a given element can be found in an array
+};
+console.log(b)
