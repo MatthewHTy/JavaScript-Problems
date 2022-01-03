@@ -157,13 +157,12 @@ whosPaying();
 // Fibonacci Sequence
 
 function fibonacciGenerator(n) {
-    //Do NOT change any of the code above 👆
 
     //Write your code here:
     // In order to get the last index in a array, the solution is n - 1
-    var fibonacci = [];
+    let fibonacci = [];
 
-    for (var i = 0; i < n; i++) {
+    for (let i = 0; i < n; i++) {
 
         if (i > 1)
 
@@ -184,17 +183,17 @@ fibonacciGenerator(100);
 
 
 function weekDays(w) {
-    var w = ["monday", "tuesday", "wednesday", "thursday", "friday"];
+    let w = ["monday", "tuesday", "wednesday", "thursday", "friday"];
     let weekArray = w.length - 1;
     for (var i = 0; i <= weekArray; i++) {
         console.log(w[i])
     }
 }
 
-var arr = ["monday", "tuesday", "wednesday", "thursday", "friday"],
+let arr = ["monday", "tuesday", "wednesday", "thursday", "friday"],
     len = arr.length - 1;
 
-for (var i = 0; i <= len; i++) {
+for (let i = 0; i <= len; i++) {
     console.log("The value of element # " + i + " is: " + arr[i]);
 }
 
