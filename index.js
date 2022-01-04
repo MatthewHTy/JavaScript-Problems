@@ -268,3 +268,42 @@ for (let i = 0; i < len; i++) {
     // indexOf is a method that returns the first index at which a given element can be found in an array
 };
 console.log(b)
+
+// 8 Array methods
+// .filter(); filter out an array to produce a certan group in the object
+// .map(); return a certain group of the array
+// .find(); return a single index in the array of information
+// forEach(); like a for loop, but takes a function instead, lists all diff items given
+// some function - .some(); gives a boolean true or false to see if it has an item equal to the parameter
+// .every(); checks to see every item falls under a certain if statements returns true or false
+// .reduce(); takes a first input besides the array
+// .includes(); takes a single argument, to see if the index insists in the array returns true or false
+
+// show me how you can remove duplicates from an array
+
+let numberArray = [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7];
+
+let lenArray = numberArray.length;
+
+let output = [];
+
+for (let i = 0; i < lenArray; i++) {
+    if (output.indexOf(numberArray[i]) === - 1) {
+        output.push(numberArray[i])
+    }
+};
+
+console.log(output)
+
+// show me how to remove duplicates in an array
+
+let numbersArray = [1, 1, 2, 2, 3, 3, 4, 4, 5, 5];
+let lensArray = numbersArray.length;
+
+let outputs = [];
+for (let i = 0; i < lensArray; i++) {
+    if (outputs.indexOf(numbersArray[i]) === - 1) {
+        outputs.push(numbersArray[i])
+    };
+};
+console.log(outputs);
